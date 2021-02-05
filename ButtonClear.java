@@ -5,7 +5,7 @@ public class ButtonClear extends PatternButton {
     private static final long serialVersionUID = 5309565656335985776L;
 
     public ButtonClear() {
-        init();
+        init();//изменения
     }
 
     @Override
