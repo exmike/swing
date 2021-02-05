@@ -1,3 +1,6 @@
+package src.main.java.panels;
+
+
 import java.awt.Color;
 import java.awt.Font;
 
@@ -14,7 +17,6 @@ public class MainPanel extends JPanel {
         init();
     }
 
-
     private void init() {
 
         super.setBounds(120, 120, 440, 200);
@@ -27,6 +29,5 @@ public class MainPanel extends JPanel {
         textArea.setBounds(10, 10, 310, 180);
         textArea.setEditable(false);
         this.add(textArea);
-
     }
 }

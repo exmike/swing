@@ -1,3 +1,7 @@
+package src.main.java.logic;
+
+import src.main.java.buttons.*;
+import src.main.java.panels.*;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
