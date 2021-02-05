@@ -1,3 +1,5 @@
+package src.main.java.panels;
+
 import java.awt.Color;
 import java.awt.Font;
 
@@ -16,13 +18,11 @@ public class StackPanel extends JPanel {
         this.setLayout(null);
 
         initStackLines();
-        initSetLabeles();
-
-
+        initSetLabels();
     }
 
 
-    private void initSetLabeles() {
+    private void initSetLabels() {
 
         labelNumArray = new JLabel[LABEL_N];
         for (int i = 0, x = LABEL_N * 10; i < LABEL_N; i++) {
@@ -32,7 +32,6 @@ public class StackPanel extends JPanel {
             this.add(labelNumArray[i]);
             x -= 10;
         }
-
     }
 
     private void initStackLines() {

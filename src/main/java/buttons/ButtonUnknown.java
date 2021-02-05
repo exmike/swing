@@ -1,3 +1,7 @@
+package src.main.java.buttons;
+
+import src.main.java.logic.PatternButton;
+import src.main.java.panels.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -19,7 +23,7 @@ public class ButtonUnknown extends PatternButton {
 
         @Override
         public void actionPerformed(ActionEvent arg0) {
-            MainPanel.textArea.setText("Эта кнопка находится в разработке \nНе обращайте на неё внимание \nВы можете продолжить работу");
+            MainPanel.textArea.setText("Эта кнопка находится в разработке  \nНе обращайте на неё внимание \nВы можете продолжить работу");
         }
     }
 }
