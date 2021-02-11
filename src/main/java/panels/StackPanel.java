@@ -6,9 +6,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class StackPanel extends JPanel {
-
-    private static final long serialVersionUID = 5434583611082148797L;
+public class  StackPanel extends JPanel {
     public static JLabel[] labelNumArray;
     public static final int LABEL_N = 16;
 
@@ -21,16 +19,14 @@ public class StackPanel extends JPanel {
         initSetLabels();
     }
 
-
     private void initSetLabels() {
-
         labelNumArray = new JLabel[LABEL_N];
-        for (int i = 0, x = LABEL_N * 10; i < LABEL_N; i++) {
+        for (int i = 0, y = LABEL_N * 10; i < LABEL_N; i++) {
             labelNumArray[i] = new JLabel();
             labelNumArray[i].setFont(new Font("Arial", 10, 10));
-            labelNumArray[i].setBounds(10, x, 80, 10);
+            labelNumArray[i].setBounds(10, y, 80, 10);
             this.add(labelNumArray[i]);
-            x -= 10;
+            y -= 10;
         }
     }
 
@@ -52,7 +48,7 @@ public class StackPanel extends JPanel {
         this.add(panelLine3);
     }
 
-    public static JLabel getLabel(int i) throws Exception {
+    public  JLabel getLabel(int i) throws Exception {
         if (i < 0 || i >= labelNumArray.length) {
             throw new Exception("Incorrect index");
         }
